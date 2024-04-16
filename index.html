@@ -74,9 +74,29 @@
       <section class="section-hero hero-img">
         <div class="container">
           <h1 class="header-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="main-btn cursor" type="button">
+          <button class="main-btn cursor" type="button" data-modal-open>
             Замовити послугу
           </button>
+
+          <!-- модальне вікно -->
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal-wrapper">
+              <button class="modal-btn" data-modal-close>
+                <svg
+                  width="11"
+                  height="11"
+                  viewBox="0 0 11 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z"
+                    fill="black"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -146,6 +166,7 @@
           <ul class="ourwork">
             <li class="img">
               <img src="images/img.jpg" alt="компютери" width="370" />
+              <p class="img-text">Мобільні додатки</p>
             </li>
             <li class="img">
               <img src="images/box2.jpg" alt="телефони" width="370" />
@@ -430,5 +451,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
